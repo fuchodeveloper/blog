@@ -64,7 +64,7 @@ Using React Hooks, initialise the form input fields like so:
 ...
 
 const App = () => {
-  const [`, setInputFields] = useState([
+  const [inputFields, setInputFields] = useState([
     { firstName: null, lastName: null }
   ]);
 
