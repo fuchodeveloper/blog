@@ -65,7 +65,7 @@ Using React Hooks, initialise the form input fields like so:
 
 const App = () => {
   const [inputFields, setInputFields] = useState([
-    { firstName: null, lastName: null }
+    { firstName: '', lastName: '' }
   ]);
 
 ...
@@ -201,7 +201,7 @@ Now comes the interesting part. Right after the `handleInputChange`, add the fol
 
   const handleAddFields = () => {
     const values = [...inputFields];
-    values.push({ firstName: null, lastName: null });
+    values.push({ firstName: '', lastName: '' });
     setInputFields(values);
   };
 
