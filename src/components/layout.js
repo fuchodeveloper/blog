@@ -14,8 +14,8 @@ class Layout extends React.Component {
         <h1
           style={{
             ...scale(1.5),
-            marginBottom: rhythm(1.5),
             marginTop: 0,
+            fontSize: '2.5rem'
           }}
         >
           <Link
@@ -36,6 +36,7 @@ class Layout extends React.Component {
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
+            fontSize: '1.8rem'
           }}
         >
           <Link
