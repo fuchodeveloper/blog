@@ -15,7 +15,7 @@ I attempted to run the database instance from the directory where it was extract
 $ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
 
-After starting the databse, I attempted to connect, create a table and populate it, but I was greeted by the error below:
+After starting the database, I attempted to connect, create a table and populate it, but I was greeted by the error below:
 ```
 message: 'connect ECONNREFUSED 127.0.0.1:8000'
 ```
