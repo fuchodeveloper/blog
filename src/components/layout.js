@@ -63,15 +63,22 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()},
-          {` `}
-          <a href="https://www.linkedin.com/in/fredrick-mgbeoma/">LinkedIn</a>
-          {" ∙ "}
-          <a href="https://twitter.com/fuchodeveloper">Twitter</a>
-          {" ∙ "}
-          <a href="https://github.com/fuchodeveloper">GitHub</a>
-        </footer>
+        <div style={{
+          display: "flex",
+          justifyContent: "space-between"
+        }}>
+          <footer>
+            © {new Date().getFullYear()},{` `}
+            <a href="https://www.linkedin.com/in/fredrick-mgbeoma/">LinkedIn</a>
+            {" ∙ "}
+            <a href="https://twitter.com/fuchodeveloper">Twitter</a>
+            {" ∙ "}
+            <a href="https://github.com/fuchodeveloper">GitHub</a>
+          </footer>
+          <div>
+            <a href="https://www.codeisbae.com/rss.xml">rss</a>
+          </div>
+        </div>
       </div>
     )
   }
