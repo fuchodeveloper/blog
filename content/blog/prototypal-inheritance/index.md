@@ -1,6 +1,6 @@
 ---
 path: prototypal-inheritance
-date: 2020-03-16T21:37:35.954Z
+date: 2020-03-17T06:57:05.954Z
 title: Prototypal Inheritance
 description: Demystifying how an HTTP request is processed
 ---
