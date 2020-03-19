@@ -2,7 +2,7 @@
 path: install-mongodb
 date: 2020-03-16T21:37:35.954Z
 title: Install MongoDB on macOS
-description: Demystifying how an HTTP request is processed
+description: Setup and run MongoDB
 ---
 
 Recently, I had to do a fresh install of MongoDB Community Edition on a MacBook running macOS Catalina. This post is a guide to show the steps I followed to ensure that the installation worked seamlessly and followed the requirements for installing third-party apps on Catalina.

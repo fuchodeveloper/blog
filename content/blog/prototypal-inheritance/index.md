@@ -2,7 +2,7 @@
 path: prototypal-inheritance
 date: 2020-03-17T06:57:05.954Z
 title: Prototypal Inheritance
-description: Demystifying how an HTTP request is processed
+description: A practical look at JavaScript Prototypal Inheritance
 ---
 
 ![Prototypal inheritance Thumbnail](../../assets/prototypal-inheritance.png "Prototypal inheritance Banner")
