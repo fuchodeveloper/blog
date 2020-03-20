@@ -6,7 +6,7 @@ description: Understanding how Object Prototype works
 ---
 ![Object Prototype Thumbnail](../../assets/object-prototype.png "Object Prototype Banner")
 
-How to Set and Access Object Prototype
+### How to Set and Access Object Prototype
 
 In the post on [Prototypal Inheritance](/prototypal-inheritance/), we looked at inheritance in JavaScript. In this post, we would be taking a look at the way to create an object and access prototypes as recommended in the ECMAScript 2015 standard.
 
