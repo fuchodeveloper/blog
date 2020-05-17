@@ -18,6 +18,8 @@ Creating a blog to share your ideas with the rest of the world might sound like 
 #### How To:
 * Search for `gatsby blog starter` on Google, or simply use the following direct link - https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog.
 * Click on the Netlify button at the bottom of the image preview:
+![Netlify button](./netlify.png "Netlify button")
+
 * You will be redirected to Netlify site, click on the `Connect to GitHub` button to authenticate via GitHub and give Netlify the permissions needed to create a public repository where your blog will be hosted.
 * Change the repository name as desired and click on the `Save & Deploy` button.
 * After the blog is created by Netlify, you can visit it using the generated link.
