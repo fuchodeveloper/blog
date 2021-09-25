@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-import "../styles/index.scss";
+import "../styles/index.scss"
 
 class Layout extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Layout extends React.Component {
           style={{
             ...scale(1.5),
             marginTop: 0,
-            fontSize: '2.5rem'
+            fontSize: "2.5rem",
           }}
         >
           <Link
@@ -38,7 +38,7 @@ class Layout extends React.Component {
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
-            fontSize: '1.8rem'
+            fontSize: "1.8rem",
           }}
         >
           <Link
@@ -65,12 +65,14 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <div style={{
-          display: "flex",
-          justifyContent: "space-between"
-        }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
           <footer>
-            © {new Date().getFullYear()},{` `}
+            {`© 2019 - ${new Date().getFullYear()}, `}
             <a href="https://www.linkedin.com/in/fredrick-mgbeoma/">LinkedIn</a>
             {" ∙ "}
             <a href="https://twitter.com/fuchodeveloper">Twitter</a>
