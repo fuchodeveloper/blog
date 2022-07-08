@@ -17,7 +17,7 @@ Below we disable proptype warnings but show all other warnings that occur in our
 import React from "react"
 import Home from "./home"
 
-const homepageErrors = console.error.bind(console.error)
+const homepageErrors = console.error.bind(console)
 beforeAll(() => {
   console.error = errormessage => {
     /*
