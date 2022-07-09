@@ -18,11 +18,11 @@ MongoDB requires creating a `data` folder in the root directory, but with the re
 1. Install XCode - https://developer.apple.com/download/
 2. Install Homebrew - https://brew.sh/#install
 3. Tap the MongoDB Homebrew Tap
-  ```shell
+  ```sh
   brew tap mongodb/brew
   ``` 
 4. Install MongoDB Community Edition
-  ```shell
+  ```sh
   brew install mongodb-community
   ```
 

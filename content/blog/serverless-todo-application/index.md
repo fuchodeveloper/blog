@@ -50,7 +50,7 @@ $ cd serverless-todo-backend
 
 Let's initialise the project directory as an npm package and install the needed dependencies. Adding the `y` flag accepts defaults for all the package configs:
 
-```shell
+```sh
 $ npm init -y
 $ npm install aws-sdk short-unique-id
 ```
@@ -103,7 +103,7 @@ exports.handler = async function (event, context) {
 }
 ```
 Test the simple Lambda above by running the command below in a terminal opened in the project directory:
-```shell
+```sh
 $ sam local start-api -p 8080
 ```
 Using Postman, make a `post` request to http://localhost:8080/create. The output should be a message like so:
@@ -133,7 +133,7 @@ module.exports = { AWS };
 ```
 
 In order to run the DynamoDB successfully locally, we need to use the command below to run it as a docker image in a new terminal window:
-```shell
+```sh
  $ docker run -p 8000:8000 amazon/dynamodb-local
 ```
 

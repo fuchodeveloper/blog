@@ -11,7 +11,7 @@ The <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Ge
 
 I attempted to run the database instance from the directory where it was extracted after installation as described in the documentation using the command: 
 
-```shell
+```sh
 $ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
 
@@ -25,7 +25,7 @@ After hours of debugging and some sleep, and more debugging, I found a <a href="
 To resolve the issue, I had to run the DynamoDB instance inside a Docker container and use a different endpoint in the Lambda like so:
 
 Run DynamoDB in Docker container:
-```shell
+```sh
 $ docker run -p 8000:8000 amazon/dynamodb-local
 ```
 
