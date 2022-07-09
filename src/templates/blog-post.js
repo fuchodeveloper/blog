@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { DiscussionEmbed } from "disqus-react"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -56,12 +55,12 @@ class BlogPostTemplate extends React.Component {
                 <div className="content-body">
                   <div className="patreon image-wrapper">
                     <a href="https://www.patreon.com/bePatron?u=32254942" data-patreon-widget-type="become-patron-button" rel="noopener noreferrer">
-                      <StaticImage src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="patreon banner" style={{ marginBottom: "0" }} />
+                      <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="patreon banner" style={{ marginBottom: "0" }} />
                     </a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
                   </div>
                   <div className="koofi image-wrapper">
                     <a href='https://ko-fi.com/Q5Q71JF4K' target="_blank" rel="noopener noreferrer">
-                      <StaticImage src="https://raw.githubusercontent.com/fuchodeveloper/blog/master/content/assets/BuyMeACoffee.png" alt="ko-fi banner" />
+                      <img src="https://raw.githubusercontent.com/fuchodeveloper/blog/master/content/assets/BuyMeACoffee.png" alt="ko-fi banner" />
                     </a>
                   </div>
                 </div>
