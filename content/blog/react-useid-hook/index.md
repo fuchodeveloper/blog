@@ -1,7 +1,7 @@
 ---
 path: react-useid-hook
 date: 2022-07-10T20:06:12.754Z
-title: React useId hook
+title: React useId Hook
 description: The React Hooks buzz continues with more hooks introduced in React 18 including useId
 ---
 
