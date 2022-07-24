@@ -77,5 +77,5 @@ NOTE: The demo above contains a loop to mimic a delay in our app.
 
 **Takeaways:**
 
-- The `useDeferredValue` hook should be used for updates that potentially expensive on your application.
+- The `useDeferredValue` hook should be used for updates that are potentially expensive on your application.
 - If your application is really slow, then it might be better to address the cause instead of using the hook to cover it up.
