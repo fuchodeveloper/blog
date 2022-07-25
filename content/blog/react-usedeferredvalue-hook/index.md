@@ -8,7 +8,9 @@ description: React useDeferredValue hook and why you should use it
 ![neon sign](./useDeferredValue.jpg "Photo by Erik Mclean on Unsplash: https://unsplash.com/photos/7lyRKyKIdJY")
 > useDeferredValue can be used to throttle expensive re-renders.
 
-This hook allows us to fix the problem of slow re-renders by deferring the computation of a part of the DOM tree. You might be familiar with using debounce in a form to specify actions performed after a set number of milliseconds.
+<small>Check out the previous post on [`useTransition Hook`](/react-usetransition-hook) if you missed it</small>
+
+The `useDeferredValue` hook allows us to fix the problem of slow re-renders by deferring the computation of a part of the DOM tree. You might be familiar with using debounce in a form to specify actions performed after a set number of milliseconds.
 
 `useDeferredValue` works similar to debounce with one key difference, which is that the deferred value is only computed by React after more urgent updates are completed.
 The `useDeferredValue` hook is convenient when implementing features like typeahead where we only want to make an API request sometime after the user stops typing. This means you don't have to specify a fixed time like you would with debounce. Specifying an arbitrary time for a debounce operation has been the _de facto_ approach to optimise the performance of forms designed to fetch the results of a query after a user stops typing. `useDeferredValue` takes this optimisation technique to the next level by removing the arbitrary time and guesswork associated with debounce.
