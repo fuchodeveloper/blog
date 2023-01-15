@@ -1,7 +1,7 @@
 ---
 path: vimium-the-hackers-browser
 date: 2023-01-15T01:18:20.954Z
-title: Vimium the hackers browser
+title: Vimium the hacker's browser
 description: Dive deep into using Vimium on the browser and how to customise the extension with custom keyboard mappings. Only keyboard, no mouse!
 ---
 
