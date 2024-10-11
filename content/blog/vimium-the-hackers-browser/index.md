@@ -17,7 +17,7 @@ Well, I’m glad that you asked. The official GitHub page for the browser extens
 
 **Vimium is a Google Chrome extension which provides keyboard shortcuts for navigation and control in the spirit of the Vim editor.**
 
-If you’re not familiar with Vim editor, it is basically a text editor that allows you to make changes to text files using only your keyboard without the need to use a mouse. 
+If you’re not familiar with Vim editor, it is basically a text editor that allows you to make changes to text files using only your keyboard without the need to use a mouse.
 
 **What are the features offered by this extension and why should I use it?**
 
@@ -59,12 +59,12 @@ My settings:
 7. to to next tab: shift+K
 8. Restore closed tab: Shift + X
 9. what is insert mode
-    1. enter insert mode: type i - `enter insert mode -- all commands will be ignored until you hit Esc to exit`
+   1. enter insert mode: type i - `enter insert mode -- all commands will be ignored until you hit Esc to exit`
 10. how to exit Vimium highlighted key combinations:
     1. using ESC
     2. typing: X or XX → X is not used for links, in my experience
 11. how to exit Vimium when filling a form field
-    * ctrl+[
+    - ctrl+[
 
 **Conclusion:**
 

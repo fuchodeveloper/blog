@@ -4,10 +4,12 @@ date: 2019-11-04T16:38:10.954Z
 title: Why Start A Developer Blog
 description: Taking some time to reflect on why this blog was created
 ---
-![Why Start A Developer Blog](./computer.jpeg "Why Start A Developer Blog")*Photo by Lauren Mancke on Unsplash*
+
+![Why Start A Developer Blog](./computer.jpeg "Why Start A Developer Blog")_Photo by Lauren Mancke on Unsplash_
 
 ### Philosophy
-The reason for starting a developer blog could vary for different people. In this post, I’ll be sharing my insights on the topic and the reason I decided to embark on this adventure. 
+
+The reason for starting a developer blog could vary for different people. In this post, I’ll be sharing my insights on the topic and the reason I decided to embark on this adventure.
 
 **Knowledge sharing**
 

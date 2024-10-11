@@ -20,6 +20,7 @@ Let's get started!
 This is a newly introduced hook that can be used to generate unique IDs that are stable both on the client and on the server. If you have had a need to generate unique IDs in your app in the past to build forms that are accessible (a11y compliant) or for some other reason, chances are that you might have used some JavaScript built-in utilities like: `Math.random`, `Date.now` or external libraries such as <a href="https://www.npmjs.com/package/uuid" target="_blank">uuid ↗︎</a>, Lodash' <a href="https://www.npmjs.com/package/lodash.uniqueid" target="_blank" >uniqueid ↗︎</a> or some other approach. With React 18, this problem has been solved. You can remove one extra dependency from your app by using the `useId` hook which is native to React 🥳.
 
 However, there are a few things to note:
+
 1. The `useId` hook does not replace using the `id` provided by your API data when iterating over a list of items.
 2. The string returned by the hook contains the special character, `:`, which ensures it is unique but the downside is that this makes the string unsupported in CSS selectors such as `querySelector` or `querySelectorAll`.
 
@@ -30,10 +31,10 @@ Let's get our hands dirty with some demo!
 In this first demo, we will build a simple form with a select dropdown. This is a stripped down version of a subscription form that allows us to focus on the usage of the `useId` hook:
 
 ```js
-import { useId } from 'react';
+import { useId } from "react"
 
 const SubscriptionForm = () => {
-  const selectorId = useId();
+  const selectorId = useId()
 
   return (
     <div>
@@ -44,21 +45,21 @@ const SubscriptionForm = () => {
         <option value="yearly">Yearly</option>
       </select>
     </div>
-  );
-};
+  )
+}
 ```
 
 **Demo 2: Mulitple IDs for different HTML form elements in a component**
 
-In the example below we prepend additional information to the ID string generated, ie `~email`. 
+In the example below we prepend additional information to the ID string generated, ie `~email`.
 
 Why are we doing this? If your form contains multiple fields, you could follow this approach by adding an extra piece of information to the ID generated. This way, you do not need to call the `useId` hook multiple times for each form field.
 
 ```js
-import { useId } from 'react';
+import { useId } from "react"
 
 const UserForm = () => {
-  const id = useId();
+  const id = useId()
 
   return (
     <>
@@ -75,8 +76,8 @@ const UserForm = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 ```
 
 The final ID for the form fields above will be like so: `:r1:~email` and `:r1:~password`.

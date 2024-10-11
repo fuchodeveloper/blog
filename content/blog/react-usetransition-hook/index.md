@@ -24,23 +24,24 @@ When should you use this hook:
 For expensive operations which would result in a poor user experience, this hook might come in handy.
 
 Let's illustrate this using a loop that runs for a reallly long time before printing values on the page:
+
 ```js
 const App = () => {
-  const [isPending, startTransition] = useTransition();
-  const [listNumbers, setListNumbers] = useState([]);
-  const [input, setInput] = useState("");
+  const [isPending, startTransition] = useTransition()
+  const [listNumbers, setListNumbers] = useState([])
+  const [input, setInput] = useState("")
 
   const handleChange = (e) => {
-    setInput(e.target.value);
+    setInput(e.target.value)
     startTransition(() => {
-      const arr = [];
+      const arr = []
       for (let i = 0; i < 5000; i++) {
-        arr.push(e.target.value);
+        arr.push(e.target.value)
       }
-      setListNumbers(arr);
-    });
-  };
- 
+      setListNumbers(arr)
+    })
+  }
+
   return (
     <>
       <input type="number" value={input} onChange={handleChange} />
@@ -48,8 +49,8 @@ const App = () => {
         ? "loading..."
         : listNumbers.map((item, i) => <div key={i}>{item}</div>)}
     </>
-  );
-};
+  )
+}
 ```
-In the code snippet above, priority is given to setting the user input `setInput(e.target.value);` while the really long loop and `setListNumbers(arr);` are marked as not urgent. The implication is that the user input is responsive and displayed as the user types because the expensive computation does not block the UI.
 
+In the code snippet above, priority is given to setting the user input `setInput(e.target.value);` while the really long loop and `setListNumbers(arr);` are marked as not urgent. The implication is that the user input is responsive and displayed as the user types because the expensive computation does not block the UI.

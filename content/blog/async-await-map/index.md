@@ -13,19 +13,19 @@ Despite being a handy tool, it can take a little while to wrap your head around 
 
 ```js
 const list = ["a", "b", "c", "d", "e"]
-const promiseReturningFunction = elem => {
+const promiseReturningFunction = (elem) => {
   // return resolved promise
   return Promise.resolve("done")
 }
 
 // sample async function
-const asyncFunction = async elem => {
+const asyncFunction = async (elem) => {
   return promiseReturningFunction(elem)
 }
 
 const responseData = async () => {
   return Promise.all(
-    list.map(elem => {
+    list.map((elem) => {
       // this could be a database call to find data based on the `elem` value provided
       return asyncFunction(elem)
     })
@@ -33,10 +33,10 @@ const responseData = async () => {
 }
 
 responseData()
-  .then(res => {
+  .then((res) => {
     console.log("res", res)
   })
-  .catch(err => {
+  .catch((err) => {
     console.error("err", err)
   })
 ```

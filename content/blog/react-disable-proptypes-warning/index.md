@@ -19,7 +19,7 @@ import Home from "./home"
 
 const homepageErrors = console.error.bind(console)
 beforeAll(() => {
-  console.error = errormessage => {
+  console.error = (errormessage) => {
     /*
       if error is a proptype error and includes the following string: `Warning: Failed prop type:`
       suppress the error and don't show it
@@ -42,5 +42,6 @@ describe("when home page renders", () => {
   })
 })
 ```
+
 Hope you found this helpful😊\
 Follow Fred on Twitter ☞ [@fuchodeveloper](https://twitter.com/fuchodeveloper)

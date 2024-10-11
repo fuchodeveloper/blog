@@ -43,24 +43,62 @@ class BlogPostTemplate extends React.Component {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <div style={{ marginBottom: "1rem" }}>
-            <div style={{ textAlign: "center", marginBottom: "1rem", color: "lightgrey" }}>
+            <div
+              style={{
+                textAlign: "center",
+                marginBottom: "1rem",
+                color: "lightgrey",
+              }}
+            >
               ‒ ‒ ‒
             </div>
             <div className="footer-card">
               <div className="image">
-                <img className="image-src" src="https://raw.githubusercontent.com/fuchodeveloper/blog/master/content/assets/fredrick-mgbeoma.jpg" alt="Fredrick Mgbeoma"/>
+                <img
+                  className="image-src"
+                  src="https://raw.githubusercontent.com/fuchodeveloper/blog/master/content/assets/fredrick-mgbeoma.jpg"
+                  alt="Fredrick Mgbeoma"
+                />
               </div>
               <div className="content">
-                Hi there! My name is Fred. I create tech content here and on <a href="https://www.youtube.com/channel/UCS6IBh0slJvb2GqpanDUS7w" target="_blank" rel="noopener noreferrer">YouTube</a> to share my journey in software development. You could support my journey by buying me a coffee or becoming my Patreon
+                Hi there! My name is Fred. I create tech content here and on{" "}
+                <a
+                  href="https://www.youtube.com/channel/UCS6IBh0slJvb2GqpanDUS7w"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YouTube
+                </a>{" "}
+                to share my journey in software development. You could support
+                my journey by buying me a coffee or becoming my Patreon
                 <div className="content-body">
                   <div className="patreon image-wrapper">
-                    <a href="https://www.patreon.com/bePatron?u=32254942" data-patreon-widget-type="become-patron-button" rel="noopener noreferrer">
-                      <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="patreon banner" style={{ marginBottom: "0" }} />
-                    </a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                    <a
+                      href="https://www.patreon.com/bePatron?u=32254942"
+                      data-patreon-widget-type="become-patron-button"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"
+                        alt="patreon banner"
+                        style={{ marginBottom: "0" }}
+                      />
+                    </a>
+                    <script
+                      async
+                      src="https://c6.patreon.com/becomePatronButton.bundle.js"
+                    ></script>
                   </div>
                   <div className="koofi image-wrapper">
-                    <a href='https://ko-fi.com/Q5Q71JF4K' target="_blank" rel="noopener noreferrer">
-                      <img src="https://raw.githubusercontent.com/fuchodeveloper/blog/master/content/assets/BuyMeACoffee.png" alt="ko-fi banner" />
+                    <a
+                      href="https://ko-fi.com/Q5Q71JF4K"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://raw.githubusercontent.com/fuchodeveloper/blog/master/content/assets/BuyMeACoffee.png"
+                        alt="ko-fi banner"
+                      />
                     </a>
                   </div>
                 </div>
@@ -70,15 +108,30 @@ class BlogPostTemplate extends React.Component {
                     method="post"
                     target="popupwindow"
                     onSubmit={() => {
-                      window.open('https://tinyletter.com/codeisbae', 'popupwindow', 'scrollbars=yes,width=800,height=600'); return true
+                      window.open(
+                        "https://tinyletter.com/codeisbae",
+                        "popupwindow",
+                        "scrollbars=yes,width=800,height=600"
+                      )
+                      return true
                     }}
                   >
                     <span>
-                      <input type="text" className="email-input" name="email" id="tlemail" placeholder="Get email updates" />
+                      <input
+                        type="text"
+                        className="email-input"
+                        name="email"
+                        id="tlemail"
+                        placeholder="Get email updates"
+                      />
                     </span>
                     <input type="hidden" value="1" name="embed" />
-                    <input className="email-subscribe" type="submit" value="Subscribe" /><p>
-                    </p>
+                    <input
+                      className="email-subscribe"
+                      type="submit"
+                      value="Subscribe"
+                    />
+                    <p></p>
                   </form>
                 </div>
               </div>

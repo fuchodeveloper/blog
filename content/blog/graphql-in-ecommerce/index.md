@@ -10,6 +10,7 @@ GraphQL is an open-source query language for APIs and a runtime for fulfilling t
 <iframe width="1206" height="678" src="https://www.youtube.com/embed/WYEJd4j6TM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Timestamp:
+
 0:00 - [Intro](https://youtu.be/WYEJd4j6TM0)\
 0:50 - [About me](https://youtu.be/WYEJd4j6TM0?t=50)\
 1:10 - [Why GraphQL at commercetools](https://youtu.be/WYEJd4j6TM0?t=70)\

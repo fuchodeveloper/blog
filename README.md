@@ -8,7 +8,8 @@
   Fredrick Mgbeoma's Blog
 </h1>
 
-Penning down my journey in tech 
+Penning down my journey in tech
 
 ## 🚀 Quick start
-  Built from the official Gatsby blog starter package
+
+Built from the official Gatsby blog starter package

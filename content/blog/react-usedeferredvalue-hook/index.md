@@ -6,6 +6,7 @@ description: React useDeferredValue hook and why you should use it
 ---
 
 ![neon sign](./useDeferredValue.jpg "Photo by Erik Mclean on Unsplash: https://unsplash.com/photos/7lyRKyKIdJY")
+
 > useDeferredValue can be used to throttle expensive re-renders.
 
 <small>Check out the previous post on [`useTransition Hook`](/react-usetransition-hook) if you missed it</small>

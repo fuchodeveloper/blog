@@ -11,14 +11,15 @@ In this post, we'll be taking a practical look at some of the new features intro
 
 ## Optional Chaining
 
-Optional chaining allows you to write code that will immediately stop running expressions if it hits a `null` or `undefined`. 
+Optional chaining allows you to write code that will immediately stop running expressions if it hits a `null` or `undefined`.
 
 **Syntax**
 
 The Optional Chaining operator can be represented in three positions:
+
 ```ts
-obj?.prop       // Property access
-obj?.[expr]     // Optional element access
+obj?.prop // Property access
+obj?.[expr] // Optional element access
 func?.(...args) // Optional function or method call
 ```
 
@@ -34,21 +35,21 @@ type UserResponse = {
   occupation?: string
   jobHistory?: {
     firstJob?: string
-  },
+  }
   favoriteFoods?: string[]
 }
 
-const user: UserResponse;
+const user: UserResponse
 ```
 
 Say we want to display the user's occupation, we could implement this like so:
 
 ```ts
 // without optional chaining
-const userOccupation = user && user.occupation;
+const userOccupation = user && user.occupation
 
 // with optional chaining
-const userOccupation = user?.occupation;
+const userOccupation = user?.occupation
 ```
 
 With optional chaining in the code above, we're checking if a user exists then we attempt to return the user's occupation. It is important to note here that `?.` checks if the value on the immediate **left** of it is `null` or `undefined`. What this means is, if we tried to access the user's first job using `user?.jobHistory.firstJob`, the code would return an error if there is no job history.
@@ -58,11 +59,11 @@ With optional chaining in the code above, we're checking if a user exists then w
 This is another variant of Optional Chaining used to access non-identifier properties such as arbitrary strings, numbers, and symbols. This can be illustrated like so:
 
 ```ts
-const userOccupation = user?.["occupation"];
+const userOccupation = user?.["occupation"]
 
 // or
 
-const favFood = user?.favoriteFoods?.[0];
+const favFood = user?.favoriteFoods?.[0]
 ```
 
 **Optional Function or Method Call**
@@ -70,14 +71,13 @@ const favFood = user?.favoriteFoods?.[0];
 Optional Chaining can also be used in function calls. They come in handy when you need to call a function conditionally at runtime, i.e only call the function if it exists. This can be implemented like so:
 
 ```ts
-const callFakeApi = async (url: string, log?: (user: object) => void ) => {
-
-  const response = await fetch(url);
-  const data = await response.json();
-  log?.(data);
+const callFakeApi = async (url: string, log?: (user: object) => void) => {
+  const response = await fetch(url)
+  const data = await response.json()
+  log?.(data)
 }
 
-callFakeApi('https://jsonplaceholder.typicode.com/todos/1', console.log);
+callFakeApi("https://jsonplaceholder.typicode.com/todos/1", console.log)
 ```
 
 In the code snippet above, we only log the data if a function, e.g `console.log` is passed to `callFakeApi`.
@@ -107,7 +107,7 @@ false ?? 10 // returns false
 NaN ?? 20 // returns NaN
 
 // empty string
-'' ?? 5 // returns ''
+"" ?? 5 // returns ''
 ```
 
 <a href="https://gist.github.com/fuchodeveloper/a0e0b6e032e37f11504681905cf8a5a1" target="_blank" rel="nofollow">Gist link</a>

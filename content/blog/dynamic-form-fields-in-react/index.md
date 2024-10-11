@@ -4,14 +4,15 @@ date: 2019-11-03T09:58:10.954Z
 title: Dynamic Form Fields in React
 description: Extending React form creation
 ---
+
 ![Dynamic Forms Thumbnail](./dynamic-forms-thumbnail.png "Dynamic Forms Banner")
 
 If you've been building applications that accept user input via forms, you might have come across the need to make some form fields dynamic. This could be for various reasons, for instance, to add multiple members as part of a team during creation. If you've never been in this situation, this post might also be helpful for you at some point.
 
 **Prerequisites:**
 
-* Working knowledge of React Hooks
-* npm installed in machine
+- Working knowledge of React Hooks
+- npm installed in machine
 
 We'll be illustrating dynamic form fields in React using a simple form that has two input fields. One for first name and another for last name, these would form the user data. These two fields would be dynamically duplicated to create more fields that are unique and can accept new user data.
 
@@ -40,12 +41,11 @@ npm i bootstrap
 Open the project in your favourite text editor. Navigate to `App.js` and replace the content with the code snippet below:
 
 ```jsx
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment } from "react"
 
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css"
 
 const App = () => {
-
   return (
     <>
       <h1>Dynamic Form Fields in React</h1>
@@ -53,7 +53,7 @@ const App = () => {
   )
 }
 
-export default App;
+export default App
 ```
 
 This gives us a basic template on which to build our form component.
@@ -152,7 +152,7 @@ return (
 
 If that looks like a lot of code thrown right at you, don't worry, we'll go over it.
 We have the function `handleSubmit` to log the value returned when the form is submitted. Here we are simply logging to the console, but you could use the data here for what ever you need depending on your specific use case.
-The JavaScript `map` function is used to create an array of the form fields. `Fragment` from React allows us group a list of children without adding a new node to the DOM. 
+The JavaScript `map` function is used to create an array of the form fields. `Fragment` from React allows us group a list of children without adding a new node to the DOM.
 
 ## Adding Functionality to the Form
 
@@ -249,9 +249,7 @@ _Aside:_ To see a preview of the form input values, add the following code snipp
 ```
 
 There you go! To add more form fields, click on `+`, to remove click on `-`.
-You can implement this functionality in your existing applications or new ones. 
-
-
+You can implement this functionality in your existing applications or new ones.
 
 Preview:
 
@@ -262,6 +260,5 @@ Preview:
      allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
      sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
    ></iframe>
-
 
 Free free to share this with your team!
