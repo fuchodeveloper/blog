@@ -61,7 +61,7 @@ class BlogPostTemplate extends React.Component {
                 />
               </div>
               <div className="content">
-                Hi there! My name is Fred. I create tech content here and on{" "}
+                Hi there! My name is Fredrick. I create tech content here and on{" "}
                 <a
                   href="https://www.youtube.com/channel/UCS6IBh0slJvb2GqpanDUS7w"
                   target="_blank"
@@ -74,8 +74,8 @@ class BlogPostTemplate extends React.Component {
                 <div className="content-body">
                   <div className="patreon image-wrapper">
                     <a
-                      href="https://www.patreon.com/bePatron?u=32254942"
-                      data-patreon-widget-type="become-patron-button"
+                      href="https://www.patreon.com/code_is_bae"
+                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       <img
@@ -84,10 +84,6 @@ class BlogPostTemplate extends React.Component {
                         style={{ marginBottom: "0" }}
                       />
                     </a>
-                    <script
-                      async
-                      src="https://c6.patreon.com/becomePatronButton.bundle.js"
-                    ></script>
                   </div>
                   <div className="koofi image-wrapper">
                     <a
@@ -102,6 +98,8 @@ class BlogPostTemplate extends React.Component {
                     </a>
                   </div>
                 </div>
+                {/* @todo: fix newsletter subscription */}
+                {/*
                 <div>
                   <form
                     action="https://tinyletter.com/codeisbae"
@@ -134,6 +132,7 @@ class BlogPostTemplate extends React.Component {
                     <p></p>
                   </form>
                 </div>
+                */}
               </div>
             </div>
           </div>
