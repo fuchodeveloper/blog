@@ -1,24 +1,30 @@
 backend:
   name: git-gateway
   branch: master
+  squash_merges: true
 
 media_folder: static/img
 public_folder: /img
 
+# Authoring
+publish_mode: editorial_workflow
+
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "post"
+    label: "Posts"
     folder: "content/blog"
     create: true
     slug: "index"
     media_folder: ""
     public_folder: ""
     path: "{{title}}/index"
+    preview_path: post/{{slug}}
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
