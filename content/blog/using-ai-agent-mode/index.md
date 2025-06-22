@@ -1,7 +1,7 @@
 ---
 title: What is GitHub AI Agent Mode
 date: 2025-06-22T11:43:00.000Z
-thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA_HU6xRJ-uApWzROFfCiQZULSUiqf7CDLjHiOqMNFGK4MxRwoAugcSGa9ZdOLJPhzV-I&usqp=CAU
+thumbnail: github_copilot_agent_mode.png.webp
 description: " A look at GitHub Copilot Agent Mode and how to use it"
 ---
 **Introduction**
